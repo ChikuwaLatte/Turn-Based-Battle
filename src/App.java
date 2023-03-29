@@ -1,13 +1,11 @@
 import constant.*;
-import Utils.*;
+import utils.*;
+import process.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println(Type.WATER.getDescription());
-        DisplayUtils.displaySentence("これは文字列表示の実験です。", Config.STRING_DISPLAY_WAIT_TIME_PER_CHAR.getIntValue());
-
         // 開始、キャラ作成・選択フェーズ
+        StartProcess.start();
 
         // 以下ループ
         // 戦闘開始

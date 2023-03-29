@@ -2,6 +2,7 @@ package constant;
 
 public enum Config {
     STRING_DISPLAY_WAIT_TIME_PER_CHAR("文字列を表示する時の一文字ごとの待ち時間", "100"),
+    PERFORM_LOADING_TIME("ローディング演出にかける時間（ミリ秒）", "1000"),
     ;
 
     private final String description;
