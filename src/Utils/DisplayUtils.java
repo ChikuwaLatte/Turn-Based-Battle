@@ -58,4 +58,23 @@ public class DisplayUtils {
         scan.close();
         return str;
     }
+
+    /**
+     * プレイヤーの回答判定
+     * 
+     * @param answer
+     * @return Boolean
+     */
+    public static boolean answerToBoolean(String answer) {
+        for (;;) {
+            if ("y".equals(answer)) {
+                return true;
+            }
+            if ("f".equals(answer)) {
+                return false;
+            }
+    
+            System.out.println("半角のf, nで回答してください");
+        }
+    }
 }

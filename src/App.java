@@ -3,7 +3,7 @@ import process.*;
 public class App {
     public static void main(String[] args) throws Exception {
         // 開始、キャラ作成・選択フェーズ
-        StartProcess.start();
+        new StartProcess().start();
 
         // 以下ループ
         // 戦闘開始
